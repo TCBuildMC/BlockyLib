@@ -107,14 +107,14 @@ forgix {
         projectName = "forge"
         jarLocation = "build/libs/" + rootProject.archives_base_name + "-forge-" + rootProject.minecraft_version + "-" + rootProject.mod_version + ".jar"
 
-        mixin "examplemod.mixins.json"
+        mixin "blockylib.mixins.json"
     }
 
 //    neoforge {
 //        projectName = "neoforge"
 //        jarLocation = "build/libs/" + rootProject.archives_base_name + "-neoforge-" + rootProject.minecraft_version + "-" + rootProject.mod_version + ".jar"
 //
-//        mixin "examplemod.mixins.json"
+//        mixin "blockylib.mixins.json"
 //    }
 
     fabric {

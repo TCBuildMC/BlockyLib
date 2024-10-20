@@ -12,5 +12,4 @@ include("fabric")
 include("forge")
 //include("neoforge")
 
-// [Customize]
-rootProject.name = "architectury-mod-template-1.20.1"
+rootProject.name = "BlockyLib"

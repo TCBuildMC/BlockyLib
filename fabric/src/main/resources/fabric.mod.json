@@ -1,31 +1,37 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "blockylib",
   "version": "${version}",
-  "name": "Example Mod",
-  "description": "This is an example description! Tell everyone what your mod is about!",
+  "name": "Blocky Lib Mod",
+  "description": "A library Minecraft mod. Just provides useful tools and extends Architectury Api.",
   "authors": [
-    "Me!"
+    "TCBuildMC"
+  ],
+  "contributors": [
+    "Block_Mrlimr267"
   ],
   "contact": {
-    "homepage": "https://fabricmc.net/",
-    "sources": "https://github.com/FabricMC/fabric-example-mod"
+    "homepage": "https://github.com/TCBuildMC",
+    "sources": "https://github.com/TCBuildMC/BlockyLib",
+    "issues": "https://github.com/TCBuildMC/BlockyLib/issues"
   },
-  "license": "Insert License Here",
-  "icon": "assets/examplemod/icon.png",
+  "license": "Apache-2.0",
+  "icon": "icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "net.examplemod.fabric.ExampleModFabric"
+      "xyz.tcbuildmc.minecraft.blockylib.fabric.BlockyLibFabric"
+    ],
+    "client": [
+      "xyz.tcbuildmc.minecraft.blockylib.client.fabric.BlockyLibClientFabric"
     ]
   },
   "mixins": [
-    "examplemod.mixins.json"
+    "blockylib.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=0.15",
     "fabric": "*",
-    "minecraft": "1.21.x",
+    "minecraft": "1.20.x",
     "architectury": "*"
   }
 }

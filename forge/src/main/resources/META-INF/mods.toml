@@ -1,35 +1,37 @@
 modLoader = "javafml"
-loaderVersion = "[47,)"
-#issueTrackerURL = ""
-license = "Insert License Here"
+loaderVersion = "[46,)"
+issueTrackerURL = "https://github.com/TCBuildMC/BlockyLib/issues"
+license = "Apache-2.0"
 
 [[mods]]
-modId = "examplemod"
+modId = "blockylib"
 version = "${version}"
-displayName = "Example Mod"
-authors = "Me!"
+displayName = "Blocky Lib Mod"
+authors = "TCBuildMC"
+credits = "Block_Mrlimr267"
+displayURL = "https://github.com/TCBuildMC/BlockyLib"
 description = '''
-This is an example description! Tell everyone what your mod is about!
+A library Minecraft mod. Just provides useful tools and extends Architectury Api.
 '''
-#logoFile = ""
+logoFile = "icon.png"
 
-[[dependencies.examplemod]]
+[[dependencies.blockylib]]
 modId = "forge"
 mandatory = true
-versionRange = "[47,)"
+versionRange = "[46,)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.blockylib]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.20.1,)"
+versionRange = "[1.20, 1.21)"
 ordering = "NONE"
 side = "BOTH"
 
-[[dependencies.examplemod]]
+[[dependencies.blockylib]]
 modId = "architectury"
 mandatory = true
-versionRange = "[9.1.12,)"
+versionRange = "[0,)"
 ordering = "AFTER"
 side = "BOTH"
