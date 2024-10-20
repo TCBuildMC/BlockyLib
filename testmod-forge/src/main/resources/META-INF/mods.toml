@@ -1,0 +1,37 @@
+modLoader = "javafml"
+loaderVersion = "[46,)"
+issueTrackerURL = "https://github.com/"
+license = "The unlicense"
+
+[[mods]]
+modId = "test-mod"
+version = "1.0.0"
+displayName = "Test Mod"
+authors = "Unknown"
+credits = ""
+displayURL = ""
+description = '''
+A test mod for BlockyLib.
+'''
+logoFile = "icon.png"
+
+[[dependencies.test-mod]]
+modId = "forge"
+mandatory = true
+versionRange = "[46,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.test-mod]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.20, 1.21)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.test-mod]]
+modId = "blockylib"
+mandatory = true
+versionRange = "[0,)"
+ordering = "AFTER"
+side = "BOTH"
